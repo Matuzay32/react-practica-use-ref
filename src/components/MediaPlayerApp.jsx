@@ -12,11 +12,13 @@ const [isplay, setIsplay] = useState(false);
 
 
 const handdlePlay  = (param)=>{
+    
    const video = videoRef.current;
+
+   setIsplay(!isplay);
 
     isplay ? video.pause()  : video.play()
     
-   setIsplay(!isplay);
 
 }
 

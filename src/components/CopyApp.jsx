@@ -10,8 +10,11 @@ const handdleCopy = ()=>{
    
     const input = inputRef.current;
     input.select();
+
     document.execCommand('copy');
+    
     setIscopy(true);
+
 
     setTimeout(() => {
         setIscopy(false);
